@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python generate.py configs/tg_4.yaml

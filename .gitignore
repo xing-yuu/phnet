@@ -1,0 +1,8 @@
+.vscode/
+dataset/*
+!dataset/voxel/
+generate_with_property.py
+generate_for_mango_net.py
+__pycache__/
+**/__pycache__/
+out/

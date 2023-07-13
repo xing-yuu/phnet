@@ -1,0 +1,30 @@
+dataset:
+  out_dir: dataset/tg/20230711
+  train_ratio: 0.8
+  shuffle: true
+  material:
+    youngs_modulus_hard: 1
+    youngs_modulus_soft: 1e-6
+    poisson_ratio: 0.3
+  voxel:
+    dir: dataset/voxel/tg
+    resolution: 36
+    size: 40
+  shape:
+    sample_per_voxel: 1500
+    scale_min: 1
+    scale_max: 2
+    angle_min: 75
+    angle_max: 90
+train:
+  batch_size: 8
+  out_dir: out/tg
+  learning_rate: 5e-4
+  epoch: 100
+  eval_interval: 100
+  pre_train: 'model.pt'
+  
+  
+
+    
+
