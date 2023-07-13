@@ -22,7 +22,7 @@ Microstructures are attracting academic and industrial interest because of the r
 
 ## Network architecture
 <div align=center> 
-    <img src="fig/NET.jpg" width = 80%/> 
+    <img src="fig/net.jpg" width = 80%/> 
 </div>
 
 + (a) the pre-processing to encode microstructure, base material and boundary shape into a material-voxel tensor as input.
@@ -142,7 +142,7 @@ The other parameters are: $E_h = 1$,$v = 0.3$ and $E_s = 1×10^{−6}$. -->
 
 
 <div align=center> 
-    <img src="fig/MODEL.jpg" width = 80%/> 
+    <img src="fig/model.jpg" width = 80%/> 
 </div>
 
 The overall configuration file is:
