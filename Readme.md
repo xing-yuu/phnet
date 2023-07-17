@@ -125,14 +125,18 @@ train:
 ```
 
 ### Prediction
-By passing a set of input data to the net , you can obtain the microscopic displacement directly with a size of $(18*n*n*n)$. The elasticity tensor can be solved using the `C_homo=homo_net.homogenized(voxel,output,ke,X0)` method within the `network_homogenization` class. This method takes the input voxel, microscopic displacement (output), stiffness matrix(ke), and macroscopic strain(X0) as inputs to homogenize the elastic tensor, resulting in a tensor with dimensions of $(36*36)$.
+By passing a set of input data to the net , you can obtain the microscopic displacement directly with a size of $(18*n*n*n)$. The elasticity tensor can be solved using the 
+```python
+C_homo=homo_net.homogenized(voxel,output,ke,X0)
+``` 
+method within the `network_homogenization` class. This method takes the input voxel, microscopic displacement (output), stiffness matrix(ke), and macroscopic strain(X0) as inputs to homogenize the elastic tensor, resulting in a tensor with dimensions of $(36*36)$.
 
 <!-- Using `output = net(input)`, you can directly obtain the microscopic displacement of a set of input data $(18*n*n*n)$. The elasticity tensor is solved using `C_homo=homo_net.homogenized(voxel,output,ke,X0)` in class `network_homogenization`. Input voxel, microscopic displacement (output), stiffness matrix, macroscopic strain, can be solved to homogenize the elastic tensor$(36*36)$.  -->
 
 
 ## Example
 
-We have provided a basic dataset that utilizes a triply periodic minimal surface known as the Tubular Gyroid (TG-TPMS) as the basic microstructure. This dataset consists of 40 uniformly sampled volume fractions ranging $[2 \%,33 \%]$. For each volume fraction, we have selected 1500 distinct boundary shapes within a range of shape parameters. The magnitude scale range is set to $[1,2]$, while the angle range is $[75^\circ, 90^\circ]$, resulting in a total of 60k samples.The elasticity parameters for this dataset are set to $E_h = 1$, $v = 0.3$, and $E_s = 1\times10^{-6}$.
+We have provided a basic dataset that utilizes a triply periodic minimal surface known as the Tubular Gyroid (TG-TPMS) as the basic microstructure. This dataset consists of 40 uniformly sampled volume fractions ranging $[0.02, 0.33]$. For each volume fraction, we have selected 1500 distinct boundary shapes within a range of shape parameters. The magnitude scale range is set to $[1,2]$, while the angle range is $[75^\circ, 90^\circ]$, resulting in a total of 60k samples.The elasticity parameters for this dataset are set to $E_h = 1$, $v = 0.3$, and $E_s = 1\times10^{-6}$.
 
 
 The following image shows the dataset we have provided, consisting of a total of 40 models.
