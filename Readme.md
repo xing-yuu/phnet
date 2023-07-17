@@ -125,11 +125,11 @@ train:
 ```
 
 ### Prediction
-By passing a set of input data to the net , you can obtain the microscopic displacement directly with a size of $(18*n*n*n)$. The elasticity tensor can be solved using the 
+By passing a set of input data to the net , you can obtain the microscopic displacement directly with a size of $$(18*n*n*n)$$. The elasticity tensor can be solved using the 
 ```python
 C_homo=homo_net.homogenized(voxel,output,ke,X0)
 ``` 
-method within the `network_homogenization` class. This method takes the input voxel, microscopic displacement (output), stiffness matrix(ke), and macroscopic strain(X0) as inputs to homogenize the elastic tensor, resulting in a tensor with dimensions of $(36*36)$.
+method within the `network_homogenization` class. This method takes the input voxel, microscopic displacement (output), stiffness matrix(ke), and macroscopic strain(X0) as inputs to homogenize the elastic tensor, resulting in a tensor with dimensions of $$(36*36)$$.
 
 <!-- Using `output = net(input)`, you can directly obtain the microscopic displacement of a set of input data $(18*n*n*n)$. The elasticity tensor is solved using `C_homo=homo_net.homogenized(voxel,output,ke,X0)` in class `network_homogenization`. Input voxel, microscopic displacement (output), stiffness matrix, macroscopic strain, can be solved to homogenize the elastic tensor$(36*36)$.  -->
 
