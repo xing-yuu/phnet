@@ -1,4 +1,6 @@
 # PH-NET
+[In Chinese](Readme_zh.md)
+
 This repository contains the code to reproduce the results from the paper
 [PH-Net: Parallelepiped Microstructure Homogenization via 3D Convolutional Neural Networks](https://doi.org/10.1016/j.addma.2022.103237).
 
