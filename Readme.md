@@ -125,7 +125,7 @@ train:
 ```
 
 ### Prediction
-By passing a set of input data to the net , you can obtain the microscopic displacement directly with a size of $$(18*n*n*n)$$. The elasticity tensor can be solved using the 
+By passing a set of input data to the net , you can obtain the microscopic displacement directly with a size of $ (18*n*n*n) $. The elasticity tensor can be solved using the 
 ```python
 C_homo=homo_net.homogenized(voxel,output,ke,X0)
 ``` 
