@@ -107,7 +107,7 @@ C_homo=homo_net.homogenized(voxel,output,ke,X0)
 
 
 ## 样例
-我们提供了一个基本数据集，它使用称为Tubular Gyroid（TG-TPMS）的三重周期性最小曲面作为基本微结构。该数据集包括40个均匀采样的体积分数，范围为$[0.02, 0.33]$。对于每个体积分数，我们在一定的形状参数范围内选择了1500个不同的边界形状。幅度尺度范围设置为$[1,2]$，而角度范围为$[75^\circ, 90^\circ]$，总共产生了60k个样本。该数据集的弹性参数设置为$E_h = 1$，$v = 0.3$，$E_s = 1\times10^{-6}$。
+我们提供了一个基本数据集，它使用称为Tubular Gyroid（TG-TPMS）的三重周期性最小曲面作为基本微结构。该数据集包括40个均匀采样的体积分数，范围为 $[0.02, 0.33]$ 。对于每个体积分数，我们在一定的形状参数范围内选择了1500个不同的边界形状。幅度尺度范围设置为 $[1,2]$ ，而角度范围为 $[75^\circ, 90^\circ]$ ，总共产生了60k个样本。该数据集的弹性参数设置为$E_h = 1$ ，$v = 0.3$ ，$E_s = 1\times10^{-6}$ 。
 下面的图片展示了我们提供的数据集，共包括40个模型。
 <!-- We also provide a basic dataset. In this dataset, we choose a triply periodic minimal surface called Tubular Gyroid (TG-TPMS) as the basic microstructure with 40 uniform samples in the volume fraction $[2\%,33\%]$. 
 We select 1500 distinct boundary shapes for each volume fraction sample in range of shape parameters.the magnitude scale range is $[1,2]$ and the angle range is $[75 ^\circ, 90^\circ]$, hence we have 60k samples in total. 
