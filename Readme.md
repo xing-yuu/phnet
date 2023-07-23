@@ -138,7 +138,7 @@ method within the `network_homogenization` class. This method takes the input vo
 
 ## Example
 
-We have provided a basic dataset that utilizes a triply periodic minimal surface known as the Tubular Gyroid (TG-TPMS) as the basic microstructure. This dataset consists of 40 uniformly sampled volume fractions ranging `[0.02, 0.33]`. For each volume fraction, we have selected 1500 distinct boundary shapes within a range of shape parameters. The magnitude scale range is set to `[1,2]`, while the angle range is `[75^\circ, 90^\circ]`, resulting in a total of 60k samples.The elasticity parameters for this dataset are set to `E_h = 1`, `v = 0.3`, and `E_s = 1\times10^{-6}`.
+We have provided a basic dataset that utilizes a triply periodic minimal surface known as the Tubular Gyroid (TG-TPMS) as the basic microstructure. This dataset consists of 40 uniformly sampled volume fractions ranging `[0.02, 0.33]`. For each volume fraction, we have selected 1500 distinct boundary shapes within a range of shape parameters. The magnitude scale range is set to `[1,2]`, while the angle range is $[75^\circ, 90^\circ]$, resulting in a total of 60k samples.The elasticity parameters for this dataset are set to $E_h = 1$, $v = 0.3$, and $E_s = 1\times10^{-6}$.
 
 
 The following image shows the dataset we have provided, consisting of a total of 40 models.
