@@ -1,14 +1,4 @@
 name: ph_net
-channels:
-  - pyg
-  - pytorch
-  - conda-forge
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-  - defaults
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
@@ -218,4 +208,3 @@ dependencies:
       - trimesh==3.21.6
       - tzdata==2023.3
       - vtk==9.2.6
-prefix: /home/penghao/anaconda3/envs/ph_net
